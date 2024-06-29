@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+
+<head>
+
+    <meta http-equiv="x-ua-compatible" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Movies Land</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="header">
+            <div class="left-header">
+                <a class="active" href="./index.php">Home</a>
+                <div class="dropdown">
+                    <a href="#movies">Movies</a>
+                    <div class="dropdown_menu">
+                        <a href="./index.php">Arabic Movies</a>
+                        <a href="./index.php">Animation Movies</a>
+                        <a href="./index.php">Others</a>
+                    </div>
+
+                </div>
+            
+                    <a href='./html/manageUsers.php'>ManageUsers</a>
+               
+              
+            </div>
+            <div class="right-header">
+                <div class="search-container">
+                    <div>
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="./html/basket.php">
+                    <img src="./img/shopping-basket-24.png" />
+                </a>
+
+                <div class=registry>
+                   
+                             <a href='./html/logout.php'>Logout</a>
+                    
+                       <a href='./html/login.php'>Login</a>
+                            <a href='./html/sign-up.php'>Sign Up</a>
+                     
+                    
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="logo">
+            <a href="index.php">Movies Land</a>
+        </div>
+
+    </div>
+
+   
+       <div class = addButtonContainer>
+                <form action='' method='POST'>
+                <button class = 'addButton' name = 'addNewMovie'>add new Movie</button> </form> ";
+       
+
+    </div>
+    <div class="grid-container">
+       
+               <div class='grid-item '>";
+                    <a href='./html/editMovie.php?id={$row['id target='new window' class = 'fullClick'></a>
+              
+                 <a href='./html/movie-detail.php?id={$row['id target='new window' class = 'fullClick'></a>
+             
+                <img src='img/" . $row['image>
+                <span class='movie-price'> price <em>" </em></span>
+                <span class='basket'> <em><img src='./img/shopping-cart.png'></em></span>
+                <span class='movie-title'><em>" </em></span>
+                </div>";
+            }
+        } else {
+            echo ("CANN'T GET DATA FROM SQL SERVER");
+            echo mysqli_error(($dbc));
+        }
+        mysqli_close($dbc);
+        ?>
+    </div>
+
+    <div class="footer">
+        <div class="footer-contatiner">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li> <a href="html/about-us.php" target="_blank">About Us</a></li>
+                        <li><a href="html/contact-us.php" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>@copyRight : AboRashed</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

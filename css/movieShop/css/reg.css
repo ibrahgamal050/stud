@@ -1,0 +1,35 @@
+.reg-container {
+  margin: auto;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+
+  
+}
+
+.reg-container  input {
+  padding: 12px 20px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.reg-container button {
+  background-color: #2196F3;
+  color: white;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.reg-container button:hover {
+  opacity: 0.8;
+}

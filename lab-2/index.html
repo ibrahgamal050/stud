@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="model.css">
+    <script src="index.js"></script>
+
+    <title>titres</title>
+</head>
+
+<body>
+    <div id="myModel" class="model">
+        <!-- Modal content -->
+        <div class="model-content">
+            <label>name : </label>
+            <input type="text" id="fname" name="fname"><br><br><br>
+            <button onclick="startGame()" id="bplay">Play</button>
+        </div>
+
+    </div>
+
+    <canvas id='my-canvas'></canvas>
+    <script>
+
+        let startGame = () => {
+            let model = document.getElementById("myModel")
+            let canvas = document.getElementById("my-canvas")
+            if(document.getElementById('fname').value!=''){
+                model.style.display = "none"
+                canvas.style.display = "inline"
+                setupCanvas()
+            }
+        }
+
+    </script>
+</body>
+
+</html>

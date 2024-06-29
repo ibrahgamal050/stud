@@ -1,0 +1,157 @@
+body {
+  position: relative;
+  margin: 0px;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dddddd;
+}
+
+.table {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  align-items: flex-end;
+  margin-top: 300px;
+}
+
+.beer {
+  width: 10%;
+  height: 100%;
+  background: url("pigeon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.die {
+  /* transform: rotateX(100deg); */
+  /* display: none; */
+  visibility: hidden;
+}
+
+.newgame {
+  display: block;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  width: 60%;
+}
+
+
+.screen {
+  cursor: url("pngwing.com.png"), default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  
+
+   min-height: 100%;
+   background-image: url(background.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+
+}
+.screen .count {
+  font-size: 30px;
+  color: #000;
+  border-radius: 0.25em;
+
+  padding: 10px;
+  background-color: #fff;
+}
+.button {
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+  /* object-fit: cover; */
+}
+
+.modal-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.model-body {
+  position: relative; /*позиционирование элемента относитльно внешнего элемента*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+#nameinput {
+  height: 40px;
+  width: 140px;
+}
+.popScreen{
+text-align: center;
+
+}
+.saveButton {
+background-color: #4CAF50;
+font-size: 15px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+cursor:pointer;
+padding: 10px;
+border: 0;
+color: #fff;
+border-radius: 2px;
+
+}
+.playAgain {
+  background-color: #008CBA;
+  font-size: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  cursor:pointer;
+  text-align: center;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+
+}
+.userName input {
+margin: 5px;
+padding-left: 5px;
+}
+.popScreen table {
+  margin: 0 auto; 
+}
+.line-1 {
+  height: 1px;
+  border: 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background: black;
+  margin-bottom: 20px;
+}

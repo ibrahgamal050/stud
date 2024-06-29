@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Охота на федота</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="newgame">
+      <h1>Добро пожаловать в игру</h1>
+      <input type="image" class="button" id="newgameb" src="play.png" />
+    </div>
+
+    <div class="screen">
+      <div class="count">Сбитых банок: <strong>0</strong></div>
+      <div class="table">
+        <div class="beer die"></div>
+        <div class="beer"></div>
+        <div class="beer die"></div>
+        <div class="beer"></div>
+        <div class="beer die"></div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="model-body">
+        <div class ="popScreen">
+          Счет: <span id="counter">0</span>
+          <div class = "userName">
+            <input type="text" name="nameinput" id="nameinput" placeholder="Ваше имя"/>
+            <button class ="saveButton" onclick="savename()">Ввести</button>
+            <button class ="playAgain" onclick="start_2()">Играть заново</button>
+          </div>
+          <div class="line-1">
+            <hr>
+          </div>
+          <table id="tableBody"></table>
+        </div>
+      </div>
+    </div>
+
+    <audio class="shot" src=""></audio>
+    <audio class="hit" src=""></audio>
+  </body>
+</html>
+<script src="script.js"></script>
